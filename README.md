@@ -1,4 +1,4 @@
-# TC1030.302-MedicTrack
+# MedicTrack
 
 MedicTrack is a Hospital Management System built in C++ that uses the principles of Object-Oriented Programming. This project is designed to assist healthcare facilities in managing key operations such as patient records, doctor scheduling, and staff management. By reducing manual paperwork and centralizing information, the system improves the efficiency of the Hospital where it's used.
 
