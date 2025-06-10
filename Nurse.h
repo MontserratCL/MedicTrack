@@ -5,13 +5,14 @@
 #include <string>
 using namespace std;
 
+//Nurse class that inherits from person 
 class Nurse : public Person {
 private:
     string shift;
     string department;
 
 public:
-    // Constructors
+    // Constructors (method overloading)
     Nurse(string name, string id, string phone, string shift);
     Nurse(string name, string id, string phone, string shift, string department);
     
@@ -19,8 +20,14 @@ public:
     string getShift();
     string getDepartment();
     
-    // virtual function from Person
+    // Setter
+    void setDepartment(string department);
+    
+    // Pure virtual function from Person (method overriding)
     string getInfo() override;
+    
+    // Operator overloading
+    bool operator==(Nurse& other);
 };
 
 #endif
