@@ -1,32 +1,36 @@
 #ifndef DEPARTMENT_H
 #define DEPARTMENT_H
 
-#include "Doctor.h"
-#include "Nurse.h"
+#include "Person.h"
 #include <string>
 #include <vector>
 using namespace std;
 
+
+//Departemnt class that's going to manage the hospital department using polymorphism with a single vector of Person pointers
 class Department {
 private:
     string name;
-    vector<Doctor*> doctors;
-    vector<Nurse*> nurses;
+    string location;
+    vector<Person*> staff; // Polymorphic vector this can hold Doctor*, Nurse*, etc.
 
 public:
-    // constructors
+    // Constructors (with the method overloading)
     Department(string name);
     Department(string name, string location);
     
-    // Getter
+    // Getters
     string getName();
+    string getLocation();
     
-    // methods
-    void addStaff(Doctor* doctor);
-    void addStaff(Nurse* nurse);
-
+    // Methods
+    void addStaff(Person* person); // Polymorphic method
     int getStaffCount();
-    int getStaffCount(string type);
+    int getStaffCount(string type); // Overloaded method
+    string getAllStaffInfo(); // Method to display all staff information
+    
+    // Operator overloading
+    int operator+(Department& other);
 };
 
 #endif
