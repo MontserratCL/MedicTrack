@@ -7,6 +7,7 @@
 #include <vector>
 using namespace std;
 
+//Doctor class that inherits from Person and contains additional information such as specialization, experience and patients.
 class Doctor : public Person {
 private:
     string specialization;
@@ -14,19 +15,25 @@ private:
     vector<Patient*> patients;
 
 public:
-    // Constructor
+    // Constructors (that has the method overloading)
     Doctor(string name, string id, string phone, string specialization);
     Doctor(string name, string id, string phone, string specialization, int experience);
     
     // Getters
     string getSpecialization();
     
-    // Methods
+    // Methods (with method overloading)
     void addPatient(Patient* patient);
     void addPatient(string name, string id, string phone);
-   
-    // Pure virtual function from person
+    
+    // Other methods 
+    int getPatientCount();
+    
+    // Pure virtual function from Person (method overriding)
     string getInfo() override;
+    
+    // Operator overloading
+    bool operator==(Doctor& other);
 };
 
 #endif
