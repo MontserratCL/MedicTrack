@@ -2,7 +2,7 @@
 #include "Doctor.h"
 #include "Nurse.h"
 
-//Construtor dor Department class that receives the name of the department
+//Construtor for Department class that receives the name of the department
 Department::Department(string name) {
     this->name = name;
     this->location = "Not specified"; // Default location
