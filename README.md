@@ -51,6 +51,17 @@ Central system manager containing departments and patients.
 
 ---
 
+## Execution example
+
+![Captura de Pantalla 2025-06-10 a la(s) 18 56 06](https://github.com/user-attachments/assets/320283a4-dcfd-4d0c-9713-7a1637e2b2c5)
+
+
+g++ -std=c++11 -o medictrack *.cpp 
+
+./medictrack
+
+---
+
 ##  Usage Instructions
 
 Upon starting the program, a menu is displayed with numeric options:
