@@ -13,7 +13,10 @@
 Modern hospitals and clinics handle an overwhelming volume of sensitive information daily. Ensuring accuracy, confidentiality, and accessibility in such environments is a major operational challenge. **MedicTrack** addresses this need by providing a simulated, yet realistic, software solution tailored to the healthcare context. This project showcases a practical and socially impactful application of OOP. Through the implementation of inheritance, polymorphism, abstraction, and operator overloading, MedicTrack demonstrates the relevance and power of software engineering in real-world domains.
 
 ---
+## UML Diagram 
+![UML FINAL drawio](https://github.com/user-attachments/assets/c779c6a5-33b2-4403-83b4-abf687d7e3d8)
 
+---
 ## Classes and Relationships (Design Justification)
 
 ### 1. Person (Abstract Superclass)
@@ -99,7 +102,7 @@ Upon starting the program, a menu is displayed with numeric options:
 - **No file storage** – all data is lost on exit.  
 - **Pointer mismanagement** – although currently handled, future changes could risk leaks.  
 - **User must create entities in order** (e.g., no assigning staff if none exist).
-- 
+  
 ---
 
 ## Personal Conclusion
