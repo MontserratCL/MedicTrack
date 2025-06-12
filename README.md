@@ -14,7 +14,8 @@ Modern hospitals and clinics handle an overwhelming volume of sensitive informat
 
 ---
 ## UML Diagram 
-![UML FINAL drawio](https://github.com/user-attachments/assets/c779c6a5-33b2-4403-83b4-abf687d7e3d8)
+![FINAL FINAL](https://github.com/user-attachments/assets/6acebb07-4100-4fa8-bef9-283c9c3ee715)
+
 
 ---
 ## Classes and Relationships (Design Justification)
